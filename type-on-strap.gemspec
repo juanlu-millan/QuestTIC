@@ -1,14 +1,14 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "type-on-strap"
+  spec.name          = "QuestTIC"
   spec.version       = "2.3.0"
-  spec.authors       = ["Sylhare","Rohan Chandra"]
-  spec.email         = ["sylhare@outlook.com", "hellorohan@outlook.com"]
+  spec.authors       = ["Juanlu Millán"]
+  spec.email         = ["juanluismillanhidalgo@gmail.com"]
 
   spec.summary       =  "A simple and responsive jekyll theme template"
   spec.description   = %q{A simple and responsive jekyll theme template based on type-theme. Great for blogs, easy to customize and responsive.}
-  spec.homepage      = "https://github.com/sylhare/Type-on-Strap"
+  spec.homepage      = "https://quest-tic.netlify.app/"
   spec.license       = "MIT"
 
   spec.rdoc_options            = ["--charset=UTF-8"]
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
                                MSG
 
   spec.required_ruby_version   = '>= 2.4.0'
-    
+
   spec.add_runtime_dependency "jekyll", ">= 3.8", "< 5.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
