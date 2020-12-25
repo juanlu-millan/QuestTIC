@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://sylhare.github.io/Type-on-Strap/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sylhare.github.io/Type-on-Strap/" rel="alternate" type="text/html" /><updated>2020-12-25T19:47:55+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/feed.xml</id><title type="html">Type on Strap</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Sample post</title><link href="https://sylhare.github.io/Type-on-Strap/2019/06/30/sample-post.html" rel="alternate" type="text/html" title="Sample post" /><published>2019-06-30T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><id>https://sylhare.github.io/Type-on-Strap/2019/06/30/sample-post</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2019/06/30/sample-post.html">Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
+Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. 
+&lt;!--more--&gt;
+Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
+
+* Consectetur adipiscing elit
+* Donec a diam lectus
+* Sed sit amet ipsum mauris
+
+Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+
+Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula *semper consectetur sagittis*, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.
+
+{% include aligner.html images=&quot;pexels/travel.jpeg&quot; column=1 %}
+
+Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+
+&gt; Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque
+
+Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.
+
+Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci[^1]. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.
+
+[^1]: 
+    {% include citation.html key=&quot;ref1&quot; %}</content><author><name></name></author><category term="A Tag" /><category term="Test" /><category term="Lorem" /><category term="Ipsum" /><summary type="html">Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</summary></entry><entry><title type="html">Color Post</title><link href="https://sylhare.github.io/Type-on-Strap/2019/05/18/color-post.html" rel="alternate" type="text/html" title="Color Post" /><published>2019-05-18T00:00:00+02:00</published><updated>2019-05-18T00:00:00+02:00</updated><id>https://sylhare.github.io/Type-on-Strap/2019/05/18/color-post</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2019/05/18/color-post.html"># What a colorful post!
+
+This is an idea that came from [xukimseven/HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) 
+looking at this cheerful and colorful them, I wanted to enable something similar for mine.
+
+You can go fork and star hers too! 😉
+
+&lt;!--more--&gt;
+
+## How does it work?
+
+Basically you need to add just one thing, the color:
+
+```yml
+---
+layout: post
+title: Color Post
+color: brown
+---
+```
+
+It can either be a html color like `brown` (which look like red to me). Or with the rgb:
+
+```yml
+---
+layout: post
+title: Color Post
+color: rgb(165,42,42)
+---
+```
+
+The background used is `lineart.png` from [xukimseven](https://github.com/xukimseven) you can edit it in the config file. 
+If you want another one, put it in `/assets/img` as well. 
+&gt; ⚠️ It's a bit hacking the css in the `post.html`</content><author><name>Sylhare</name></author><category term="Test" /><category term="Color" /><category term="Markdown" /><summary type="html">What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful them, I wanted to enable something similar for mine. You can go fork and star hers too! 😉</summary></entry><entry><title type="html">Feature images</title><link href="https://sylhare.github.io/Type-on-Strap/2014/11/29/feature-images.html" rel="alternate" type="text/html" title="Feature images" /><published>2014-11-29T00:00:00+01:00</published><updated>2014-11-29T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2014/11/29/feature-images</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2014/11/29/feature-images.html">Hopefully you will find enough information about how to set images in your blog here.
+This is an example of a post which includes a feature image specified in the front matter of the post. 
+The feature image spans the full-width of the page, and is shown with the title on permalink pages:
+
+```yaml
+feature-img: &quot;assets/img/feature-img/desk-messy.jpeg&quot;
+thumbnail: &quot;assets/img/thumbnails/feature-img/desk-messy.jpeg&quot; 
+```
+
+You can also use a thumbnail, a smaller version of the same image to improve loading of the page.
+The thumbnail will also be used when you share your article on other platform (linkedin, whatsapp, facebook, ...).
+
+&gt;  - And now it is working
+
+You can also add images aligned in your post using the `aligner` include.
+Make sure to separate all of the image path from in a string separated with `,`.
+It by default look into `assets/img/` so give the path from there, example:
+
+{% highlight ruby %}
+{% raw %}
+{% include aligner.html images=&quot;pexels/book-glass.jpeg,triangle.png&quot; %}
+{% endraw %}
+{% endhighlight %}
+
+{% include aligner.html images=&quot;pexels/book-glass.jpeg,feature-img/desk-messy.jpeg&quot; %}
+
+
+Here you have two images side by side, but you can set more and set the amount per columns 
+(by specifying the number of columns or let it be automatic using `&quot;auto&quot;`):
+
+{% highlight ruby %}
+{% raw %}
+{% include aligner.html images=&quot;portfolio/cabin.png,portfolio/cake.png,portfolio/circus.png&quot; column=3 %}
+{% endraw %}
+{% endhighlight %}
+
+{% include aligner.html images=&quot;portfolio/cabin.png,portfolio/cake.png,portfolio/circus.png&quot; column=3 %}
+
+it also works with only one images, it is made to display it smaller than normally.
+However you can just use the Markdown way of doing it to get the image normal sized and centered.
+
+{% highlight ruby %}
+{% raw %}
+# Markdown way (bigger)
+![Travel]({{ &quot;/assets/img/pexels/computer.jpeg&quot; | relative_url}})
+# Aligner with only One (50% of width)
+{% include aligner.html images=&quot;pexels/computer.jpeg&quot; %}
+{% endraw %}
+{% endhighlight %}
+
+{% include aligner.html images=&quot;pexels/computer.jpeg&quot; %}</content><author><name></name></author><category term="Test" /><category term="Lorem" /><summary type="html">Hopefully you will find enough information about how to set images in your blog here. This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages:</summary></entry><entry><title type="html">Markdown and HTML</title><link href="https://sylhare.github.io/Type-on-Strap/2014/11/28/markdown-and-html.html" rel="alternate" type="text/html" title="Markdown and HTML" /><published>2014-11-28T00:00:00+01:00</published><updated>2014-11-28T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2014/11/28/markdown-and-html</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2014/11/28/markdown-and-html.html">Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdown/syntax) with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
+
+## Title
+
+### Sub title
+
+Tables have also been extended from Markdown:
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+Here's an example of an image, which is included using Markdown:
+
+![Image of a glass on a book]({{ &quot;/assets/img/pexels/book-glass.jpeg&quot; | relative_url }})
+
+This is another example of list:
+ 
+ - list of things
+   1. Sub list
+   2. of Other things
+   3. with numbers
+ - And many more
+   - Sub sub list
+     - can go on ...
+       - and on ...
+         - and on !
+   - That's it.
+   
+### Other subtitle
+
+Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.
+
+{% highlight js %}
+// count to ten
+for (var i = 1; i &lt;= 10; i++) {
+    console.log(i);
+}
+
+// count to twenty
+var j = 0;
+while (j &lt; 20) {
+    j++;
+    console.log(j);
+}
+{% endhighlight %}
+
+### Math
+
+Type on Strap uses KaTeX to display maths. Equations such as $$S_n = a \times \frac{1-r^n}{1-r}$$ can be displayed inline.
+
+Alternatively, they can be shown on a new line:
+
+$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$</content><author><name>Rohan Chandra</name></author><category term="Test" /><category term="Markdown" /><summary type="html">Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</summary></entry><entry><title type="html">What’s your title</title><link href="https://sylhare.github.io/Type-on-Strap/2014/11/27/whats-your-title.html" rel="alternate" type="text/html" title="What’s your title" /><published>2014-11-27T00:00:00+01:00</published><updated>2014-11-27T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2014/11/27/whats-your-title</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2014/11/27/whats-your-title.html">This is an example of a post which includes a feature image that has a
+text, where you don't want to redisplay the title.
+Mind your image size in order for the text to be displayed where you want it to.
+The only limit is your imagination.
+
+Here is how the yaml looks inside the post:
+
+```yml
+title: What's your title
+hide_title: true
+feature-img: assets/img/feature-img/story.jpeg
+author: mhagnumdw
+tags: [Test, Lorem]
+```
+
+You may wonder, why is there a title when you are not actually displaying it. &lt;br&gt;
+Well that's due to some jekyll limitation:
+
+&gt; You **can't** set the **title** to the **empty string**
+
+The title is used elsewhere than inside the post, for example in the blog page that list this post.
+An empty title would break those pages and possibly prevents jekyll to render your blog.</content><author><name>Mhagnumdw</name></author><category term="Test" /><category term="Lorem" /><summary type="html">This is an example of a post which includes a feature image that has a text, where you don’t want to redisplay the title. Mind your image size in order for the text to be displayed where you want it to. The only limit is your imagination.</summary></entry><entry><title type="html">The Real Lorem Ipsum</title><link href="https://sylhare.github.io/Type-on-Strap/2014/11/26/lorem-ipsum.html" rel="alternate" type="text/html" title="The Real Lorem Ipsum" /><published>2014-11-26T00:00:00+01:00</published><updated>2014-11-26T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2014/11/26/lorem-ipsum</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2014/11/26/lorem-ipsum.html">## Lorem Ipsum
+
+from _&quot;de Finibus Bonorum et Malorum&quot;_ written by Cicero in 45 BC.
+ &lt;!--more--&gt;
+Find out more on [lipsum.com](https://www.lipsum.com/). And if you like colors, check out the [http color trends](https://www.w3schools.com/colors/colors_trends.asp) from w3schools.
+
+### The standard Lorem Ipsum passage (since 1500s)
+
+&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;
+
+### Section 1.10.32 
+
+#### Latin
+&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?&quot;
+
+
+#### Translation by H. Rackham (1914)
+&quot;But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?&quot;
+
+### Section 1.10.33
+
+#### Latin
+
+&quot;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.&quot;
+
+
+#### Translation by H. Rackham (1914)
+
+&quot;On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.&quot;</content><author><name></name></author><category term="Lorem" /><category term="Color" /><summary type="html">Lorem Ipsum from “de Finibus Bonorum et Malorum” written by Cicero in 45 BC.</summary></entry><entry><title type="html">Markup: Syntax Highlighting</title><link href="https://sylhare.github.io/Type-on-Strap/2014/08/08/Markup-Syntax-Highlighting.html" rel="alternate" type="text/html" title="Markup: Syntax Highlighting" /><published>2014-08-08T00:00:00+02:00</published><updated>2014-08-08T00:00:00+02:00</updated><id>https://sylhare.github.io/Type-on-Strap/2014/08/08/Markup-Syntax-Highlighting</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2014/08/08/Markup-Syntax-Highlighting.html">Syntax highlighting[^1] is a feature that displays source code. 
+This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct.
+
+
+### GFM Code Blocks
+
+GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
+
+```css
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+```
+
+{% highlight scss linenos %}
+.highlight {
+  margin: 0;
+  padding: 1em;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.8;
+}
+{% endhighlight %}
+
+```html
+{% raw %}&lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&gt;
+  {% if page.previous %}
+    &lt;a href=&quot;{{ site.url }}{{ page.previous.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.previous.title }}&quot;&gt;Previous article&lt;/a&gt;
+  {% endif %}
+  {% if page.next %}
+    &lt;a href=&quot;{{ site.url }}{{ page.next.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.next.title }}&quot;&gt;Next article&lt;/a&gt;
+  {% endif %}
+&lt;/nav&gt;&lt;!-- /.pagination --&gt;{% endraw %}
+```
+
+```ruby
+module Jekyll
+  class TagIndex &lt; Page
+    def initialize(site, base, dir, tag)
+      @site = site
+      @base = base
+      @dir = dir
+      @name = 'index.html'
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
+      self.data['tag'] = tag
+      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
+      tag_title_suffix = site.config['tag_title_suffix'] || '&amp;#8211;'
+      self.data['title'] = &quot;#{tag_title_prefix}#{tag}&quot;
+      self.data['description'] = &quot;An archive of posts tagged #{tag}.&quot;
+    end
+  end
+end
+```
+
+### Code Blocks in Lists
+
+Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., `1.`). Usually this will mean indenting 3 spaces instead of 4.
+
+1. Do step 1.
+2. Now do this:
+
+   ```ruby
+   def print_hi(name)
+     puts &quot;Hi, #{name}&quot;
+   end
+   print_hi('Tom')
+   #=&gt; prints 'Hi, Tom' to STDOUT.
+   ```
+        
+3. Now you can do this.
+
+### GitHub Gist Embed
+
+An example of a Gist embed below:
+
+&lt;script defer=true src=&quot;https://gist.github.com/sylhare/dad7ed1ef3d13614c77c4ebadf8a11c3.js&quot;&gt;&lt;/script&gt;
+
+You can use `defer=true` so that the loading of the gist doesn't prevent the loading of the page.
+
+{% highlight html %}
+{% raw %}
+   &lt;script defer=true 
+           src=&quot;https://gist.github.com/sylhare/dad7ed1ef3d13614c77c4ebadf8a11c3.js&quot;&gt;
+   &lt;/script&gt;
+{% endraw %}
+{% endhighlight %}
+
+
+[^1]: 
+    {% include citation.html key=&quot;highlight&quot; %}</content><author><name>Michael Rose</name></author><category term="code" /><summary type="html">Syntax highlighting1 is a feature that displays source code. This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct. &amp;#8617;</summary></entry><entry><title type="html">Generate a table of content</title><link href="https://sylhare.github.io/Type-on-Strap/2013/12/12/Generate-a-table-of-content.html" rel="alternate" type="text/html" title="Generate a table of content" /><published>2013-12-12T00:00:00+01:00</published><updated>2013-12-12T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2013/12/12/Generate-a-table-of-content</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2013/12/12/Generate-a-table-of-content.html"># Using Kramdown GFM &lt;!--more--&gt;
+
+&lt;!-- To be placed at the beginning of the post, it is where the table of content will be generated --&gt;
+* TOC
+{:toc}
+
+## Basic Usage
+
+
+You need to put this at the beginning of the page where you want the table of content to be displayed
+
+```html
+* TOC
+{:toc}
+```
+
+It will then render the markdown and html titles (lines that begins with `#` or using the `&lt;h1&gt;&lt;/h1&gt;` tages)
+
+# Using toc.js
+
+Demo display of [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents) by ghiculescu.
+
+&lt;!-- To be placed at the beginning of the post, it is where the table of content will be generated --&gt;
+&lt;div id=&quot;toc&quot;&gt;&lt;/div&gt;
+
+## Customize with toc.js
+
+[toc.js](https://github.com/ghiculescu/jekyll-table-of-contents) stands for table of content, it is a js plugin that generates automatically a table of content of a post.
+
+### Use with this jekyll template
+
+If you want to customize the theme it is up to you, you can add the `toc.js` file into the `asset &gt; js` and add it into the `page.html` layout with:
+
+```html
+&lt;script src=&quot;{{ &quot;/assets/js/toc.js&quot; | relative_url }}&quot; &gt;&lt;/script&gt;
+```
+Then you can use it as it is said on the repository.
+
+## Basic Usage
+
+The script requires jQuery. First, reference toc.js in templates where you would like to add the table of content. Then, create an HTML element wherever you want your table of contents to appear:
+
+```html
+&lt;div id=&quot;toc&quot;&gt;&lt;/div&gt;
+```
+
+Then you put your post with titles and all like:
+
+```apiblueprint
+## Title
+## Mid title 1
+This is text on page one
+## Mid title 2
+This is text for page two
+### Sub title 2.a
+Some more text
+```
+
+Then at the end of your post, you call the .toc() function using:
+
+```html
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function() {
+    $('#toc').toc();
+});
+&lt;/script&gt;
+```
+
+## How it would look like
+
+So you can get a feel of it.
+
+![image](https://user-images.githubusercontent.com/20642750/39189661-c22099f2-47a0-11e8-826e-2ec3ef4cc4f4.png)
+
+&lt;script&gt;
+// toc.js 
+// Copied here for the example, can be placed in assets/js for real use in your template.
+// https://github.com/ghiculescu/jekyll-table-of-contents
+(function($){
+  $.fn.toc = function(options) {
+    var defaults = {
+      noBackToTopLinks: false,
+      title: '&lt;i&gt;Jump to...&lt;/i&gt;',
+      minimumHeaders: 3,
+      headers: 'h1, h2, h3, h4, h5, h6',
+      listType: 'ol', // values: [ol|ul]
+      showEffect: 'show', // values: [show|slideDown|fadeIn|none]
+      showSpeed: 'slow', // set to 0 to deactivate effect
+      classes: { list: '',
+                 item: ''
+               }
+    },
+    settings = $.extend(defaults, options);
+
+    function fixedEncodeURIComponent (str) {
+      return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+        return '%' + c.charCodeAt(0).toString(16);
+      });
+    }
+
+    function createLink (header) {
+      var innerText = (header.textContent === undefined) ? header.innerText : header.textContent;
+      return &quot;&lt;a href='#&quot; + fixedEncodeURIComponent(header.id) + &quot;'&gt;&quot; + innerText + &quot;&lt;/a&gt;&quot;;
+    }
+
+    var headers = $(settings.headers).filter(function() {
+      // get all headers with an ID
+      var previousSiblingName = $(this).prev().attr( &quot;name&quot; );
+      if (!this.id &amp;&amp; previousSiblingName) {
+        this.id = $(this).attr( &quot;id&quot;, previousSiblingName.replace(/\./g, &quot;-&quot;) );
+      }
+      return this.id;
+    }), output = $(this);
+    if (!headers.length || headers.length &lt; settings.minimumHeaders || !output.length) {
+      $(this).hide();
+      return;
+    }
+
+    if (0 === settings.showSpeed) {
+      settings.showEffect = 'none';
+    }
+
+    var render = {
+      show: function() { output.hide().html(html).show(settings.showSpeed); },
+      slideDown: function() { output.hide().html(html).slideDown(settings.showSpeed); },
+      fadeIn: function() { output.hide().html(html).fadeIn(settings.showSpeed); },
+      none: function() { output.html(html); }
+    };
+
+    var get_level = function(ele) { return parseInt(ele.nodeName.replace(&quot;H&quot;, &quot;&quot;), 10); };
+    var highest_level = headers.map(function(_, ele) { return get_level(ele); }).get().sort()[0];
+    var return_to_top = '&lt;i class=&quot;icon-arrow-up back-to-top&quot;&gt; &lt;/i&gt;';
+
+    var level = get_level(headers[0]),
+      this_level,
+      html = settings.title + &quot; &lt;&quot; +settings.listType + &quot; class=\&quot;&quot; + settings.classes.list +&quot;\&quot;&gt;&quot;;
+    headers.on('click', function() {
+      if (!settings.noBackToTopLinks) {
+        window.location.hash = this.id;
+      }
+    })
+    .addClass('clickable-header')
+    .each(function(_, header) {
+      this_level = get_level(header);
+      if (!settings.noBackToTopLinks &amp;&amp; this_level === highest_level) {
+        $(header).addClass('top-level-header').after(return_to_top);
+      }
+      if (this_level === level) // same level as before; same indenting
+        html += &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot; + createLink(header);
+      else if (this_level &lt;= level){ // higher level than before; end parent ol
+        for(var i = this_level; i &lt; level; i++) {
+          html += &quot;&lt;/li&gt;&lt;/&quot;+settings.listType+&quot;&gt;&quot;
+        }
+        html += &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot; + createLink(header);
+      }
+      else if (this_level &gt; level) { // lower level than before; expand the previous to contain a ol
+        for(i = this_level; i &gt; level; i--) {
+          html += &quot;&lt;&quot; + settings.listType + &quot; class=\&quot;&quot; + settings.classes.list +&quot;\&quot;&gt;&quot; +
+                  &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot;
+        }
+        html += createLink(header);
+      }
+      level = this_level; // update for the next one
+    });
+    html += &quot;&lt;/&quot;+settings.listType+&quot;&gt;&quot;;
+    if (!settings.noBackToTopLinks) {
+      $(document).on('click', '.back-to-top', function() {
+        $(window).scrollTop(0);
+        window.location.hash = '';
+      });
+    }
+
+    render[settings.showEffect]();
+  };
+})(jQuery);
+&lt;/script&gt;
+
+&lt;!-- To be copied at the end of the post to render the table of content --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function() {
+    $('#toc').toc();
+});
+&lt;/script&gt;</content><author><name>Sylhare</name></author><category term="toc.js" /><category term="kramdown" /><category term="Markdown" /><category term="Customization" /><summary type="html">Using Kramdown GFM</summary></entry><entry><title type="html">Tech Stuff example</title><link href="https://sylhare.github.io/Type-on-Strap/2013/11/02/Tech-stuff-example.html" rel="alternate" type="text/html" title="Tech Stuff example" /><published>2013-11-02T00:00:00+01:00</published><updated>2013-11-02T00:00:00+01:00</updated><id>https://sylhare.github.io/Type-on-Strap/2013/11/02/Tech-stuff-example</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2013/11/02/Tech-stuff-example.html">Because if you put some code in your blog, you would at least make it:
+
+1. Searchable
+2. Good looking
+
+## Search on code
+
+Search should be working even for complicated escape symbols.
+
+```bash
+sed -i 's/\&quot;hostname\&quot;\:.*$/\&quot;hostname\&quot;\: \&quot;'$IPADDR'\&quot;\,/g' open-falcon/agent/config/cfg.json
+```
+
+Or try searching for partial of a command, like this article should be returned when looking for &quot;find grep&quot;
+
+```bash
+find /etc -type f -exec cat '{}' \; | tr -c '.[:digit:]' '\n' | grep '^[^.][^.]*\.[^.][^.]*\.[^.][^.]*\.[^.][^.]*$'
+```
+
+## Code highlighting examples
+
+Because you might put code in your blog post and you want to make sure 
+it will look good in here.
+And that the search function is working!
+
+### Java
+
+java example
+
+```java
+import java.util.*;
+
+@Example
+public class Demo {
+  private static final String CONSTANT = &quot;String&quot;;
+  private Object o;
+  /**
+   * Creates a new demo.
+   * @param o The object to demonstrate.
+   */
+  public Demo(Object o) {
+    this.o = o;
+    String s = CONSTANT + &quot;Other example of text&quot;;
+    int i = 123 - 33 % 11;
+  }
+  public static void main(String[] args) {
+    Demo demo = new Demo();
+    System.out.println(demo.o.toString())
+  }
+}
+```
+
+### HTML
+
+html example
+
+```html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;body&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        This is an example
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+```
+
+### Javascript
+
+```js
+/**
+ * Does a thing
+ */
+function helloWorld(param1, param2) {
+  var something = 0;
+
+  // Do something
+  if (2.0 % 2 == something) {
+    console.log('Hello, world!');
+  } else {
+    return null;
+  }
+
+  // @TODO comment
+}
+```
+
+### Python
+
+```python
+import os
+
+def some_function(param_one=&quot;&quot;, param_two=0):
+    r'''A docstring'''
+    if param_one &gt; param_two: # interesting
+        print(&quot;Greater&quot;)
+    return (param_two - param_one + 1 + 0b10) or None
+
+class SomeClass:
+    &quot;&quot;&quot; dunno what I am doing &quot;&quot;&quot;
+    
+    def __init__(self):
+        pass
+```
+
+### YAML
+
+You can also render some yaml, like this `_config.yml`:
+
+```yml
+
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# This file, &quot;_config.yml&quot; is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# SITE CONFIGURATION
+baseurl: &quot;/Type-on-Strap&quot;
+url: &quot;https://sylhare.github.io&quot;
+
+# THEME-SPECIFIC CONFIGURATION
+title: Type on Strap                                    # site's title
+description: &quot;A website with blog posts and pages&quot;      # used by search engines
+avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
+favicon: assets/favicon.ico                             # Icon displayed in the tab
+
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+```
+
+### Mermaid
+
+Diagrams with mermaid.
+
+Here is a simple example using:
+
+```html
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+&lt;/div&gt;
+```
+
+That will be rendered into this:
+
+{% include aligner.html images=&quot;mermaid-example.png&quot; column=1 %}
+
+But you can also go with more complex features and diagrams from the [documentation](https://mermaid-js.github.io/mermaid/):
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail!
+    John--&gt;&gt;Alice: Great!
+    John-&gt;&gt;Bob: How about you?
+    Bob--&gt;&gt;John: Jolly good!
+&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Markdown" /><summary type="html">Because if you put some code in your blog, you would at least make it:</summary></entry><entry><title type="html">Blogging with title</title><link href="https://sylhare.github.io/Type-on-Strap/2013/10/18/blogging-with-title.html" rel="alternate" type="text/html" title="Blogging with title" /><published>2013-10-18T00:00:00+02:00</published><updated>2013-10-18T00:00:00+02:00</updated><id>https://sylhare.github.io/Type-on-Strap/2013/10/18/blogging-with-title</id><content type="html" xml:base="https://sylhare.github.io/Type-on-Strap/2013/10/18/blogging-with-title.html"># I am a BIG title
+
+This is a very tiny tiny post with less than 250 letters.</content><author><name></name></author><category term="Test" /><category term="Ipsum" /><category term="Markdown" /><category term="Portfolio" /><summary type="html">I am a BIG title</summary></entry></feed>
