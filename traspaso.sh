@@ -10,7 +10,8 @@ do
 done
 
 #Actualizamos los ficheros modificados. La opción incremental solo generará un documento o página si se modifica,es decir, solo afectara a las páginas nuevas o modificadas
-bundle exec jekyll build --incremental
+bundle exec jekyll build 
+#--incremental
 
 #Copiamos los html creados en nuestro _site y los movemos a nuestro repositorio que esta enlazado a netlify
 cp -r /home/juanlu/GitHub/Blog-QuestTIC/_site/* /home/juanlu/GitHub/QuestTIC/
