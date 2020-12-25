@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//Blog-QuestTIC/feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//Blog-QuestTIC/" rel="alternate" type="text/html" /><updated>2020-12-25T21:53:01+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/feed.xml</id><title type="html">Quest TIC</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Sample post</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2019/06/30/sample-post.html" rel="alternate" type="text/html" title="Sample post" /><published>2019-06-30T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2019/06/30/sample-post</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2019/06/30/sample-post.html">&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2020-12-25T21:54:46+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Sample post</title><link href="https://quest-tic.netlify.app//2019/06/30/sample-post.html" rel="alternate" type="text/html" title="Sample post" /><published>2019-06-30T00:00:00+02:00</published><updated>2019-06-30T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2019/06/30/sample-post</id><content type="html" xml:base="https://quest-tic.netlify.app//2019/06/30/sample-post.html">&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
 Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. 
 &lt;!--more--&gt;
 Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
@@ -16,7 +16,7 @@ Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit 
 &lt;div class=&quot;row&quot;&gt;
     
     &lt;div style=&quot;flex: 100.0%&quot;&gt;
-        &lt;img class=&quot;single&quot; src=&quot;/Blog-QuestTIC/assets/img/pexels/travel.jpeg&quot; alt=&quot;travel.jpeg&quot; /&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/travel.jpeg&quot; alt=&quot;travel.jpeg&quot; /&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -38,7 +38,7 @@ Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit 
       &lt;p&gt;&lt;span class=&quot;cit-authors&quot;&gt;John Smith&lt;/span&gt;, &lt;span class=&quot;cit-title&quot;&gt;A Title About Citations&lt;/span&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="A Tag" /><category term="Test" /><category term="Lorem" /><category term="Ipsum" /><summary type="html">Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</summary></entry><entry><title type="html">Color Post</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2019/05/18/color-post.html" rel="alternate" type="text/html" title="Color Post" /><published>2019-05-18T00:00:00+02:00</published><updated>2019-05-18T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2019/05/18/color-post</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2019/05/18/color-post.html">&lt;h1 id=&quot;what-a-colorful-post&quot;&gt;What a colorful post!&lt;/h1&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="A Tag" /><category term="Test" /><category term="Lorem" /><category term="Ipsum" /><summary type="html">Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</summary></entry><entry><title type="html">Color Post</title><link href="https://quest-tic.netlify.app//2019/05/18/color-post.html" rel="alternate" type="text/html" title="Color Post" /><published>2019-05-18T00:00:00+02:00</published><updated>2019-05-18T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2019/05/18/color-post</id><content type="html" xml:base="https://quest-tic.netlify.app//2019/05/18/color-post.html">&lt;h1 id=&quot;what-a-colorful-post&quot;&gt;What a colorful post!&lt;/h1&gt;
 
 &lt;p&gt;This is an idea that came from &lt;a href=&quot;https://github.com/xukimseven/HardCandy-Jekyll&quot;&gt;xukimseven/HardCandy-Jekyll&lt;/a&gt; 
 looking at this cheerful and colorful them, I wanted to enable something similar for mine.&lt;/p&gt;
@@ -71,7 +71,7 @@ looking at this cheerful and colorful them, I wanted to enable something similar
 If you want another one, put it in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/assets/img&lt;/code&gt; as well.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;⚠️ It’s a bit hacking the css in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;post.html&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Sylhare</name></author><category term="Test" /><category term="Color" /><category term="Markdown" /><summary type="html">What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful them, I wanted to enable something similar for mine. You can go fork and star hers too! 😉</summary></entry><entry><title type="html">Feature images</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/29/feature-images.html" rel="alternate" type="text/html" title="Feature images" /><published>2014-11-29T00:00:00+01:00</published><updated>2014-11-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/29/feature-images</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/29/feature-images.html">&lt;p&gt;Hopefully you will find enough information about how to set images in your blog here.
+&lt;/blockquote&gt;</content><author><name>Sylhare</name></author><category term="Test" /><category term="Color" /><category term="Markdown" /><summary type="html">What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful them, I wanted to enable something similar for mine. You can go fork and star hers too! 😉</summary></entry><entry><title type="html">Feature images</title><link href="https://quest-tic.netlify.app//2014/11/29/feature-images.html" rel="alternate" type="text/html" title="Feature images" /><published>2014-11-29T00:00:00+01:00</published><updated>2014-11-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2014/11/29/feature-images</id><content type="html" xml:base="https://quest-tic.netlify.app//2014/11/29/feature-images.html">&lt;p&gt;Hopefully you will find enough information about how to set images in your blog here.
 This is an example of a post which includes a feature image specified in the front matter of the post. 
 The feature image spans the full-width of the page, and is shown with the title on permalink pages:&lt;/p&gt;
 
@@ -97,11 +97,11 @@ It by default look into &lt;code class=&quot;language-plaintext highlighter-roug
 &lt;div class=&quot;row&quot;&gt;
     
     &lt;div class=&quot;column&quot;&gt;
-        &lt;img src=&quot;/Blog-QuestTIC/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;book-glass.jpeg&quot; /&gt;
+        &lt;img src=&quot;/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;book-glass.jpeg&quot; /&gt;
     &lt;/div&gt;
     
     &lt;div class=&quot;column&quot;&gt;
-        &lt;img src=&quot;/Blog-QuestTIC/assets/img/feature-img/desk-messy.jpeg&quot; alt=&quot;desk-messy.jpeg&quot; /&gt;
+        &lt;img src=&quot;/assets/img/feature-img/desk-messy.jpeg&quot; alt=&quot;desk-messy.jpeg&quot; /&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -114,15 +114,15 @@ It by default look into &lt;code class=&quot;language-plaintext highlighter-roug
 &lt;div class=&quot;row&quot;&gt;
     
     &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/Blog-QuestTIC/assets/img/portfolio/cabin.png&quot; alt=&quot;cabin.png&quot; /&gt;
+        &lt;img src=&quot;/assets/img/portfolio/cabin.png&quot; alt=&quot;cabin.png&quot; /&gt;
     &lt;/div&gt;
     
     &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/Blog-QuestTIC/assets/img/portfolio/cake.png&quot; alt=&quot;cake.png&quot; /&gt;
+        &lt;img src=&quot;/assets/img/portfolio/cake.png&quot; alt=&quot;cake.png&quot; /&gt;
     &lt;/div&gt;
     
     &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/Blog-QuestTIC/assets/img/portfolio/circus.png&quot; alt=&quot;circus.png&quot; /&gt;
+        &lt;img src=&quot;/assets/img/portfolio/circus.png&quot; alt=&quot;circus.png&quot; /&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -138,10 +138,10 @@ However you can just use the Markdown way of doing it to get the image normal si
 &lt;div class=&quot;row&quot;&gt;
     
     &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;single&quot; src=&quot;/Blog-QuestTIC/assets/img/pexels/computer.jpeg&quot; alt=&quot;computer.jpeg&quot; /&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/computer.jpeg&quot; alt=&quot;computer.jpeg&quot; /&gt;
     &lt;/div&gt;
     
-&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Lorem" /><summary type="html">Hopefully you will find enough information about how to set images in your blog here. This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages:</summary></entry><entry><title type="html">Markdown and HTML</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/28/markdown-and-html.html" rel="alternate" type="text/html" title="Markdown and HTML" /><published>2014-11-28T00:00:00+01:00</published><updated>2014-11-28T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/28/markdown-and-html</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/28/markdown-and-html.html">&lt;p&gt;Jekyll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Lorem" /><summary type="html">Hopefully you will find enough information about how to set images in your blog here. This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages:</summary></entry><entry><title type="html">Markdown and HTML</title><link href="https://quest-tic.netlify.app//2014/11/28/markdown-and-html.html" rel="alternate" type="text/html" title="Markdown and HTML" /><published>2014-11-28T00:00:00+01:00</published><updated>2014-11-28T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2014/11/28/markdown-and-html</id><content type="html" xml:base="https://quest-tic.netlify.app//2014/11/28/markdown-and-html.html">&lt;p&gt;Jekyll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
 
 &lt;h2 id=&quot;title&quot;&gt;Title&lt;/h2&gt;
 
@@ -170,7 +170,7 @@ However you can just use the Markdown way of doing it to get the image normal si
 
 &lt;p&gt;Here’s an example of an image, which is included using Markdown:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Blog-QuestTIC/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;Image of a glass on a book&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;Image of a glass on a book&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is another example of list:&lt;/p&gt;
 
@@ -224,7 +224,7 @@ However you can just use the Markdown way of doing it to get the image normal si
 
 &lt;p&gt;Alternatively, they can be shown on a new line:&lt;/p&gt;
 
-\[f(x) = \int \frac{2x^2+4x+6}{x-2}\]</content><author><name>Rohan Chandra</name></author><category term="Test" /><category term="Markdown" /><summary type="html">Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</summary></entry><entry><title type="html">What’s your title</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/27/whats-your-title.html" rel="alternate" type="text/html" title="What’s your title" /><published>2014-11-27T00:00:00+01:00</published><updated>2014-11-27T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/27/whats-your-title</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/27/whats-your-title.html">&lt;p&gt;This is an example of a post which includes a feature image that has a
+\[f(x) = \int \frac{2x^2+4x+6}{x-2}\]</content><author><name>Rohan Chandra</name></author><category term="Test" /><category term="Markdown" /><summary type="html">Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</summary></entry><entry><title type="html">What’s your title</title><link href="https://quest-tic.netlify.app//2014/11/27/whats-your-title.html" rel="alternate" type="text/html" title="What’s your title" /><published>2014-11-27T00:00:00+01:00</published><updated>2014-11-27T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2014/11/27/whats-your-title</id><content type="html" xml:base="https://quest-tic.netlify.app//2014/11/27/whats-your-title.html">&lt;p&gt;This is an example of a post which includes a feature image that has a
 text, where you don’t want to redisplay the title.
 Mind your image size in order for the text to be displayed where you want it to.
 The only limit is your imagination.&lt;/p&gt;
@@ -246,7 +246,7 @@ Well that’s due to some jekyll limitation:&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;The title is used elsewhere than inside the post, for example in the blog page that list this post.
-An empty title would break those pages and possibly prevents jekyll to render your blog.&lt;/p&gt;</content><author><name>Mhagnumdw</name></author><category term="Test" /><category term="Lorem" /><summary type="html">This is an example of a post which includes a feature image that has a text, where you don’t want to redisplay the title. Mind your image size in order for the text to be displayed where you want it to. The only limit is your imagination.</summary></entry><entry><title type="html">The Real Lorem Ipsum</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/26/lorem-ipsum.html" rel="alternate" type="text/html" title="The Real Lorem Ipsum" /><published>2014-11-26T00:00:00+01:00</published><updated>2014-11-26T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/26/lorem-ipsum</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2014/11/26/lorem-ipsum.html">&lt;h2 id=&quot;lorem-ipsum&quot;&gt;Lorem Ipsum&lt;/h2&gt;
+An empty title would break those pages and possibly prevents jekyll to render your blog.&lt;/p&gt;</content><author><name>Mhagnumdw</name></author><category term="Test" /><category term="Lorem" /><summary type="html">This is an example of a post which includes a feature image that has a text, where you don’t want to redisplay the title. Mind your image size in order for the text to be displayed where you want it to. The only limit is your imagination.</summary></entry><entry><title type="html">The Real Lorem Ipsum</title><link href="https://quest-tic.netlify.app//2014/11/26/lorem-ipsum.html" rel="alternate" type="text/html" title="The Real Lorem Ipsum" /><published>2014-11-26T00:00:00+01:00</published><updated>2014-11-26T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2014/11/26/lorem-ipsum</id><content type="html" xml:base="https://quest-tic.netlify.app//2014/11/26/lorem-ipsum.html">&lt;h2 id=&quot;lorem-ipsum&quot;&gt;Lorem Ipsum&lt;/h2&gt;
 
 &lt;p&gt;from &lt;em&gt;“de Finibus Bonorum et Malorum”&lt;/em&gt; written by Cicero in 45 BC.
  &lt;!--more--&gt;
@@ -272,7 +272,7 @@ Find out more on &lt;a href=&quot;https://www.lipsum.com/&quot;&gt;lipsum.com&lt
 
 &lt;h4 id=&quot;translation-by-h-rackham-1914-1&quot;&gt;Translation by H. Rackham (1914)&lt;/h4&gt;
 
-&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;</content><author><name></name></author><category term="Lorem" /><category term="Color" /><summary type="html">Lorem Ipsum from “de Finibus Bonorum et Malorum” written by Cicero in 45 BC.</summary></entry><entry><title type="html">Markup: Syntax Highlighting</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2014/08/08/Markup-Syntax-Highlighting.html" rel="alternate" type="text/html" title="Markup: Syntax Highlighting" /><published>2014-08-08T00:00:00+02:00</published><updated>2014-08-08T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2014/08/08/Markup-Syntax-Highlighting</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2014/08/08/Markup-Syntax-Highlighting.html">&lt;p&gt;Syntax highlighting&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a feature that displays source code. 
+&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;</content><author><name></name></author><category term="Lorem" /><category term="Color" /><summary type="html">Lorem Ipsum from “de Finibus Bonorum et Malorum” written by Cicero in 45 BC.</summary></entry><entry><title type="html">Markup: Syntax Highlighting</title><link href="https://quest-tic.netlify.app//2014/08/08/Markup-Syntax-Highlighting.html" rel="alternate" type="text/html" title="Markup: Syntax Highlighting" /><published>2014-08-08T00:00:00+02:00</published><updated>2014-08-08T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2014/08/08/Markup-Syntax-Highlighting</id><content type="html" xml:base="https://quest-tic.netlify.app//2014/08/08/Markup-Syntax-Highlighting.html">&lt;p&gt;Syntax highlighting&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a feature that displays source code. 
 This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct.&lt;/p&gt;
 
 &lt;h3 id=&quot;gfm-code-blocks&quot;&gt;GFM Code Blocks&lt;/h3&gt;
@@ -369,7 +369,7 @@ This feature facilitates writing in a structured language such as a programming 
       &lt;p&gt;&lt;span class=&quot;cit-authors&quot;&gt;Michael’s Rose&lt;/span&gt;, &lt;span class=&quot;cit-title&quot;&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting&quot;&gt;Minimal Mistakes&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Michael Rose</name></author><category term="code" /><summary type="html">Syntax highlighting1 is a feature that displays source code. This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct. &amp;#8617;</summary></entry><entry><title type="html">Generate a table of content</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2013/12/12/Generate-a-table-of-content.html" rel="alternate" type="text/html" title="Generate a table of content" /><published>2013-12-12T00:00:00+01:00</published><updated>2013-12-12T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2013/12/12/Generate-a-table-of-content</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2013/12/12/Generate-a-table-of-content.html">&lt;h1 id=&quot;using-kramdown-gfm-&quot;&gt;Using Kramdown GFM &lt;!--more--&gt;&lt;/h1&gt;
+&lt;/div&gt;</content><author><name>Michael Rose</name></author><category term="code" /><summary type="html">Syntax highlighting1 is a feature that displays source code. This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct. &amp;#8617;</summary></entry><entry><title type="html">Generate a table of content</title><link href="https://quest-tic.netlify.app//2013/12/12/Generate-a-table-of-content.html" rel="alternate" type="text/html" title="Generate a table of content" /><published>2013-12-12T00:00:00+01:00</published><updated>2013-12-12T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2013/12/12/Generate-a-table-of-content</id><content type="html" xml:base="https://quest-tic.netlify.app//2013/12/12/Generate-a-table-of-content.html">&lt;h1 id=&quot;using-kramdown-gfm-&quot;&gt;Using Kramdown GFM &lt;!--more--&gt;&lt;/h1&gt;
 
 &lt;!-- To be placed at the beginning of the post, it is where the table of content will be generated --&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
@@ -413,7 +413,7 @@ This feature facilitates writing in a structured language such as a programming 
 
 &lt;p&gt;If you want to customize the theme it is up to you, you can add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toc.js&lt;/code&gt; file into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;asset &amp;gt; js&lt;/code&gt; and add it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;page.html&lt;/code&gt; layout with:&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/Blog-QuestTIC/assets/js/toc.js&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/js/toc.js&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Then you can use it as it is said on the repository.&lt;/p&gt;
 
@@ -558,7 +558,7 @@ Some more text
 $(document).ready(function() {
     $('#toc').toc();
 });
-&lt;/script&gt;</content><author><name>Sylhare</name></author><category term="toc.js" /><category term="kramdown" /><category term="Markdown" /><category term="Customization" /><summary type="html">Using Kramdown GFM</summary></entry><entry><title type="html">Tech Stuff example</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2013/11/02/Tech-stuff-example.html" rel="alternate" type="text/html" title="Tech Stuff example" /><published>2013-11-02T00:00:00+01:00</published><updated>2013-11-02T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2013/11/02/Tech-stuff-example</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2013/11/02/Tech-stuff-example.html">&lt;p&gt;Because if you put some code in your blog, you would at least make it:&lt;/p&gt;
+&lt;/script&gt;</content><author><name>Sylhare</name></author><category term="toc.js" /><category term="kramdown" /><category term="Markdown" /><category term="Customization" /><summary type="html">Using Kramdown GFM</summary></entry><entry><title type="html">Tech Stuff example</title><link href="https://quest-tic.netlify.app//2013/11/02/Tech-stuff-example.html" rel="alternate" type="text/html" title="Tech Stuff example" /><published>2013-11-02T00:00:00+01:00</published><updated>2013-11-02T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2013/11/02/Tech-stuff-example</id><content type="html" xml:base="https://quest-tic.netlify.app//2013/11/02/Tech-stuff-example.html">&lt;p&gt;Because if you put some code in your blog, you would at least make it:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Searchable&lt;/li&gt;
@@ -711,7 +711,7 @@ sequenceDiagram
 &lt;div class=&quot;row&quot;&gt;
     
     &lt;div style=&quot;flex: 100.0%&quot;&gt;
-        &lt;img class=&quot;single&quot; src=&quot;/Blog-QuestTIC/assets/img/mermaid-example.png&quot; alt=&quot;mermaid-example.png&quot; /&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/mermaid-example.png&quot; alt=&quot;mermaid-example.png&quot; /&gt;
     &lt;/div&gt;
     
 &lt;/div&gt;
@@ -730,6 +730,6 @@ sequenceDiagram
     John--&amp;gt;&amp;gt;Alice: Great!
     John-&amp;gt;&amp;gt;Bob: How about you?
     Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Markdown" /><summary type="html">Because if you put some code in your blog, you would at least make it:</summary></entry><entry><title type="html">Blogging with title</title><link href="https://quest-tic.netlify.app//Blog-QuestTIC/2013/10/18/blogging-with-title.html" rel="alternate" type="text/html" title="Blogging with title" /><published>2013-10-18T00:00:00+02:00</published><updated>2013-10-18T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//Blog-QuestTIC/2013/10/18/blogging-with-title</id><content type="html" xml:base="https://quest-tic.netlify.app//Blog-QuestTIC/2013/10/18/blogging-with-title.html">&lt;h1 id=&quot;i-am-a-big-title&quot;&gt;I am a BIG title&lt;/h1&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Markdown" /><summary type="html">Because if you put some code in your blog, you would at least make it:</summary></entry><entry><title type="html">Blogging with title</title><link href="https://quest-tic.netlify.app//2013/10/18/blogging-with-title.html" rel="alternate" type="text/html" title="Blogging with title" /><published>2013-10-18T00:00:00+02:00</published><updated>2013-10-18T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2013/10/18/blogging-with-title</id><content type="html" xml:base="https://quest-tic.netlify.app//2013/10/18/blogging-with-title.html">&lt;h1 id=&quot;i-am-a-big-title&quot;&gt;I am a BIG title&lt;/h1&gt;
 
 &lt;p&gt;This is a very tiny tiny post with less than 250 letters.&lt;/p&gt;</content><author><name></name></author><category term="Test" /><category term="Ipsum" /><category term="Markdown" /><category term="Portfolio" /><summary type="html">I am a BIG title</summary></entry></feed>
