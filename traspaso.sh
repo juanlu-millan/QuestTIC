@@ -7,7 +7,7 @@ echo "Introduce los cambios realizados(commit):"; read input
 bundle exec jekyll build --incremental
 
 #Copiamos los html creados en nuestro _site y los movemos a nuestro repositorio que esta enlazado a netlify
-cp -r /home/juanlu/GitHub/Blog-QuestTIC/_site* /home/juanlu/GitHub/QuestTIC/
+cp -r /home/juanlu/GitHub/Blog-QuestTIC/_site/* /home/juanlu/GitHub/QuestTIC/
 
 #Accedemos al repostirio donde están creadas nuestros html.
 cd /home/juanlu/GitHub/QuestTIC/
