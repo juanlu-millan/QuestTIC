@@ -2511,7 +2511,7 @@ header h1 { margin: 0; }
 @media screen and (max-width: 576px) { .feature-image header { background-size: 400% auto; } }
 
 /* --- Header text feature --- */
-.call-out { display: inline-block; width: 100%; height: 22pc; font-size: 1.2em; text-align: center; color: #fff; background: no-repeat black; background-size: cover; /* --- Responsive --- */ }
+.call-out { display: inline-block; width: 100%; height: 24pc; font-size: 1.2em; text-align: center; color: #fff; background: no-repeat black; background-size: cover; /* --- Responsive --- */ }
 
 @media screen and (min-width: 768px) { .call-out { background-size: 100% auto; } }
 
