@@ -2513,7 +2513,7 @@ header h1 { margin: 0; }
 /* --- Header text feature --- */
 .call-out { display: inline-block; width: 100%; height: 24pc; color: #fff; background-size: cover; /* --- Responsive --- */ }
 
-@media screen and (min-width: 768px) { .call-out { width: 100%; height: 200px; } }
+@media screen and (min-width: 768px) { .call-out { width: 100%; height: auto; } }
 
 @media screen and (max-width: 768px) { .call-out { width: 100%; height: 200px; } }
 
