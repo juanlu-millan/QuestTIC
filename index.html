@@ -208,13 +208,13 @@
   Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.
 
 
-h2.  Actualizamos el sistema
+Actualizamos el sistema
 
 
 sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get dist-upgrade &amp;amp;&amp;amp; apt-get clean
 
 
-h2. Agregar arquitectura i386
+Agregar arquitectura i386
 
 
 sudo dpkg --add-architecture i386
@@ -228,19 +228,19 @@ sudo dpkg --add-architecture i386
 sudo apt-get update
 
 
-h2. Elimina todos los paquetes del cache. El único inconveniente que podría resultar es que si quieres reinstalar un paquete, tienes que volver a descargarlo.
+Elimina todos los paquetes del cache. El único inconveniente que podría resultar es que si quieres reinstalar un paquete, tienes que volver a descargarlo.
 
 
 sudo apt-get clean
 
 
-h2. Instalamos los paquetes apt, dpkg y las apt-utils de la arquitectura que acabamos de agregar.
+Instalamos los paquetes apt, dpkg y las apt-utils de la arquitectura que acabamos de agregar.
 
 
 sudo apt-get -y --no-install-recommends --download-only install dpkg:i386 apt:i386 apt-utils:i386
 
 
-h2. Los archivos del paquete .deb permanecen almacenados en caché /var/cache/apt/archives así que trataremos de instalarlos
+Los archivos del paquete .deb permanecen almacenados en caché /var/cache/apt/archives así que trataremos de instalarlos
 
 
 sudo dpkg --install /var/cache/apt/archives/*i386.deb
@@ -250,7 +250,7 @@ sudo dpkg --install /var/cache/apt/archives/*i386.deb
   En caso de que de fallo algún paquete puede ser porque al instalar los paquetes dpkg hace de una pasada y si un paquete de parte alta de la lista depende de uno de la parte baja va dar un problema de dependencia por lo que seria conveniente volver a ejecutar el comando.
 
 
-h2. Descargamos los paquetes con la arquitectura i386
+Descargamos los paquetes con la arquitectura i386
 
 
  sudo apt-get --download-only -y --no-install-recommends install `dpkg -l | grep &#39;^.i&#39; | awk &#39;{print $2}&#39; | grep :amd64 | egrep -v &#39;linux-image-.&#39; | egrep -v &#39;linux-headers-.&#39; | egrep -v &#39;linux-compiler-.*&#39;|egrep -v &#39;liblsan0&#39;|sed &#39;s/:amd64/:i386/g&#39;`
@@ -260,7 +260,7 @@ h2. Descargamos los paquetes con la arquitectura i386
   Mi principal problema fueron unos paquetes que se saltaban mis restricciones y tuve que añadir más tarde: LInux-headers,linux-compiler y liblsan0
 
 
-h2. En caso de tener problemas por falta de librerías instalaremos de nuevo
+En caso de tener problemas por falta de librerías instalaremos de nuevo
 
 
 sudo  dpkg --install /var/cache/apt/archives/lib*.deb
@@ -268,19 +268,19 @@ sudo  dpkg --install /var/cache/apt/archives/lib*.deb
 
 Ahora ejecutaremos  sudo dpkg –configure -a que configurarán todos los paquetes desempaquetados pero no configurados.
 
-h2. Instalamos los últimos paquetes que nos quedan
+Instalamos los últimos paquetes que nos quedan
 
 
 sudo dpkg --install /var/cache/apt/archives/*.deb
 
 
-h2. Eliminamos los paquetes de amd64 que no dependen del kernel ya que cuando reiniciemos y tengamos la versión de 686 podremos eliminar en su totalidad los paquetes de amd64
+Eliminamos los paquetes de amd64 que no dependen del kernel ya que cuando reiniciemos y tengamos la versión de 686 podremos eliminar en su totalidad los paquetes de amd64
 
 
 sudo apt-get autoremove
 
 
-h2. Instalamos el kernel i386 (linux-image-686):
+Instalamos el kernel i386 (linux-image-686):
 
 
 sudo apt-get install -y linux-image-686
@@ -294,13 +294,13 @@ sudo apt-get install -y linux-image-686
 sudo apt-get install linux-headers-686
 
 
-h2. Reinicamos el equipo para realizar la comprobación:
+Reinicamos el equipo para realizar la comprobación:
 
 
 sudo reboot
 
 
-h2. Comprobación y borrado de todos los paquetes amd64 restantes.
+Comprobación y borrado de todos los paquetes amd64 restantes.
 
 
 uname -r
@@ -309,7 +309,7 @@ uname -r
 sudo apt-get remove -y `dpkg -l | grep &#39;^.i&#39; | awk &#39;{print $2}&#39; | grep :amd64`
 
 
-h2. Una vez eliminado todos los paquetes toca eliminar la arquitectura de amd64 y comprobamos la arquitectura que tenemos ahora por defecto
+Una vez eliminado todos los paquetes toca eliminar la arquitectura de amd64 y comprobamos la arquitectura que tenemos ahora por defecto
 
 
 vagrant@arquitectura:~$ sudo dpkg --remove-architecture amd64
