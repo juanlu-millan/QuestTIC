@@ -2515,7 +2515,7 @@ header h1 { margin: 0; }
 
 @media screen and (min-width: 768px) { .call-out { width: 100%; height: auto; } }
 
-@media screen and (max-width: 768px) { .call-out { background-size: 100% auto; } }
+@media screen and (max-width: 768px) { .call-out { width: 100%; height: auto; } }
 
 @media screen and (max-width: 576px) { .call-out { background-size: 100% auto; } }
 
