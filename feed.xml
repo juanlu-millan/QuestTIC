@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2020-12-29T13:19:54+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Modificación completa de la arquitectura en Debian 10</title><link href="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html" rel="alternate" type="text/html" title="Modificación completa de la arquitectura en Debian 10" /><published>2020-12-29T00:00:00+01:00</published><updated>2020-12-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2020-12-29T13:36:22+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Modificación completa de la arquitectura en Debian 10</title><link href="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html" rel="alternate" type="text/html" title="Modificación completa de la arquitectura en Debian 10" /><published>2020-12-29T00:00:00+01:00</published><updated>2020-12-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html">&lt;ul&gt;
   &lt;li&gt;Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -6,41 +6,35 @@
 
 &lt;h3 id=&quot;actualizamos-el-sistema&quot;&gt;Actualizamos el sistema&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get dist-upgrade &amp;amp;&amp;amp; apt-get clean
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get dist-upgrade &amp;amp;&amp;amp; apt-get clean
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;agregar-arquitectura-i386&quot;&gt;Agregar arquitectura i386&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo dpkg --add-architecture i386
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dpkg --add-architecture i386
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Actualizamos los paquetes.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;
-sudo apt-get update
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;elimina-todos-los-paquetes-del-cache-el-único-inconveniente-que-podría-resultar-es-que-si-quieres-reinstalar-un-paquete-tienes-que-volver-a-descargarlo&quot;&gt;Elimina todos los paquetes del cache. El único inconveniente que podría resultar es que si quieres reinstalar un paquete, tienes que volver a descargarlo.&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo apt-get clean
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get clean
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;instalamos-los-paquetes-apt-dpkg-y-las-apt-utils-de-la-arquitectura-que-acabamos-de-agregar&quot;&gt;Instalamos los paquetes &lt;em&gt;apt&lt;/em&gt;, &lt;em&gt;dpkg&lt;/em&gt; y las &lt;em&gt;apt-utils&lt;/em&gt; de la arquitectura que acabamos de agregar.&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo apt-get -y --no-install-recommends --download-only install dpkg:i386 apt:i386 apt-utils:i386
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get -y --no-install-recommends --download-only install dpkg:i386 apt:i386 apt-utils:i386
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;los-archivos-del-paquete-deb-permanecen-almacenados-en-caché-varcacheaptarchives-así-que-trataremos-de-instalarlos&quot;&gt;Los archivos del paquete .deb permanecen almacenados en caché /var/cache/apt/archives así que trataremos de instalarlos&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo dpkg --install /var/cache/apt/archives/*i386.deb
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dpkg --install /var/cache/apt/archives/*i386.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;En caso de que de fallo algún paquete puede ser porque al instalar los paquetes dpkg hace de una pasada y si un paquete de parte alta de la lista depende de uno de la parte baja va dar un problema de dependencia por lo que seria conveniente volver a ejecutar el comando.&lt;/li&gt;
@@ -48,9 +42,8 @@ sudo dpkg --install /var/cache/apt/archives/*i386.deb
 
 &lt;h3 id=&quot;descargamos-los-paquetes-con-la-arquitectura-i386&quot;&gt;Descargamos los paquetes con la arquitectura i386&lt;/h3&gt;
 
-&lt;pre&gt;
- sudo apt-get --download-only -y --no-install-recommends install `dpkg -l | grep '^.i' | awk '{print $2}' | grep :amd64 | egrep -v 'linux-image-.' | egrep -v 'linux-headers-.' | egrep -v 'linux-compiler-.*'|egrep -v 'liblsan0'|sed 's/:amd64/:i386/g'`
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo apt-get --download-only -y --no-install-recommends install `dpkg -l | grep '^.i' | awk '{print $2}' | grep :amd64 | egrep -v 'linux-image-.' | egrep -v 'linux-headers-.' | egrep -v 'linux-compiler-.*'|egrep -v 'liblsan0'|sed 's/:amd64/:i386/g'`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Mi principal problema fueron unos paquetes que se saltaban mis restricciones y tuve que añadir más tarde: &lt;em&gt;Linux-headers,linux-compiler y liblsan0&lt;/em&gt;&lt;/li&gt;
@@ -58,68 +51,60 @@ sudo dpkg --install /var/cache/apt/archives/*i386.deb
 
 &lt;h3 id=&quot;en-caso-de-tener-problemas-por-falta-de-librerías-instalaremos-de-nuevo&quot;&gt;En caso de tener problemas por falta de librerías instalaremos de nuevo&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo  dpkg --install /var/cache/apt/archives/lib*.deb
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo  dpkg --install /var/cache/apt/archives/lib*.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Ahora ejecutaremos  sudo &lt;em&gt;dpkg –configure -a&lt;/em&gt; que configurarán todos los paquetes desempaquetados pero no configurados.&lt;/p&gt;
 
 &lt;h3 id=&quot;instalamos-los-últimos-paquetes-que-nos-quedan&quot;&gt;Instalamos los últimos paquetes que nos quedan&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo dpkg --install /var/cache/apt/archives/*.deb
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo dpkg --install /var/cache/apt/archives/*.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;eliminamos-los-paquetes-de-amd64-que-no-dependen-del-kernel-ya-que-cuando-reiniciemos-y-tengamos-la-versión-de-686-podremos-eliminar-en-su-totalidad-los-paquetes-de-amd64&quot;&gt;Eliminamos los paquetes de amd64 que no dependen del kernel ya que cuando reiniciemos y tengamos la versión de 686 podremos eliminar en su totalidad los paquetes de amd64&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo apt-get autoremove
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get autoremove
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;instalamos-el-kernel-i386-linux-image-686&quot;&gt;Instalamos el kernel i386 (linux-image-686):&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo apt-get install -y linux-image-686
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install -y linux-image-686
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Como hemos tenido problemas con los headers de x86_64 instalaremos el header de 686&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;
-sudo apt-get install linux-headers-686
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install linux-headers-686
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;reinicamos-el-equipo-para-realizar-la-comprobación&quot;&gt;Reinicamos el equipo para realizar la comprobación:&lt;/h3&gt;
 
-&lt;pre&gt;
-sudo reboot
-&lt;/pre&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;comprobación-y-borrado-de-todos-los-paquetes-amd64-restantes&quot;&gt;Comprobación y borrado de todos los paquetes amd64 restantes.&lt;/h3&gt;
 
-&lt;pre&gt;
-uname -r
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uname -r
 4.9.0-13-686
 
 sudo apt-get remove -y `dpkg -l | grep '^.i' | awk '{print $2}' | grep :amd64`
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;una-vez-eliminado-todos-los-paquetes-toca-eliminar-la-arquitectura-de-amd64-y-comprobamos-la-arquitectura-que-tenemos-ahora-por-defecto&quot;&gt;Una vez eliminado todos los paquetes toca eliminar la arquitectura de amd64 y comprobamos la arquitectura que tenemos ahora por defecto&lt;/h3&gt;
 
-&lt;pre&gt;
-vagrant@arquitectura:~$ sudo dpkg --remove-architecture amd64
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant@arquitectura:~$ sudo dpkg --remove-architecture amd64
 vagrant@arquitectura:~$ dpkg --print-architecture
 i386
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Compruebo que no tenemos tampoco arquitectura&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;
-vagrant@arquitectura:~$ dpkg --print-foreign-architectures
+  &lt;li&gt;Compruebo que no tenemos tampoco arquitectura
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant@arquitectura:~$ dpkg --print-foreign-architectures
 vagrant@arquitectura:~$
-&lt;/pre&gt;</content><author><name></name></author><category term="Debian" /><category term="amd64" /><category term="i386" /><category term="kernel" /><summary type="html">Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.</summary></entry><entry><title type="html">Bienvenido a Quest TIC</title><link href="https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC.html" rel="alternate" type="text/html" title="Bienvenido a Quest TIC" /><published>2020-06-30T00:00:00+02:00</published><updated>2020-06-30T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC.html">&lt;p&gt;Me presento, mi nombre es Juan Luis Millán y soy el creador de este blog, Actualmente estoy cursando los estudios de Administración de Sistemas Informáticos en Red en el IES Gonzalo Nazareno (Dos Hermanas).&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Debian" /><category term="amd64" /><category term="i386" /><category term="kernel" /><summary type="html">Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.</summary></entry><entry><title type="html">Bienvenido a Quest TIC</title><link href="https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC.html" rel="alternate" type="text/html" title="Bienvenido a Quest TIC" /><published>2020-06-30T00:00:00+02:00</published><updated>2020-06-30T00:00:00+02:00</updated><id>https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/06/30/Bienvenido-a-Quest-TIC.html">&lt;p&gt;Me presento, mi nombre es Juan Luis Millán y soy el creador de este blog, Actualmente estoy cursando los estudios de Administración de Sistemas Informáticos en Red en el IES Gonzalo Nazareno (Dos Hermanas).&lt;/p&gt;
 
 &lt;!--more--&gt;
 
