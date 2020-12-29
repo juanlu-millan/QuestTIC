@@ -2517,7 +2517,7 @@ header h1 { margin: 0; }
 
 @media screen and (max-width: 768px) { .call-out { width: 100%; height: 200px; } }
 
-@media screen and (max-width: 576px) { .call-out { width: 100%; height: 200px; } }
+@media screen and (max-width: 576px) { .call-out { width: 100%; height: auto; } }
 
 .call-out p, .call-out a, .call-out li, .call-out h1, .call-out h2, .call-out h3, .call-out h4, .call-out h5 { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
 
