@@ -280,6 +280,51 @@ h2. Eliminamos los paquetes de amd64 que no dependen del kernel ya que cuando re
 sudo apt-get autoremove
 
 
+h2. Instalamos el kernel i386 (linux-image-686):
+
+
+sudo apt-get install -y linux-image-686
+
+
+
+  Como hemos tenido problemas con los headers de x86_64 instalaremos el header de 686
+
+
+
+sudo apt-get install linux-headers-686
+
+
+h2. Reinicamos el equipo para realizar la comprobación:
+
+
+sudo reboot
+
+
+h2. Comprobación y borrado de todos los paquetes amd64 restantes.
+
+
+uname -r
+4.9.0-13-686
+
+sudo apt-get remove -y `dpkg -l | grep &#39;^.i&#39; | awk &#39;{print $2}&#39; | grep :amd64`
+
+
+h2. Una vez eliminado todos los paquetes toca eliminar la arquitectura de amd64 y comprobamos la arquitectura que tenemos ahora por defecto
+
+
+vagrant@arquitectura:~$ sudo dpkg --remove-architecture amd64
+vagrant@arquitectura:~$ dpkg --print-architecture
+i386
+
+
+
+  Compruebo que no tenemos tampoco arquitectura
+
+
+vagrant@arquitectura:~$ dpkg --print-foreign-architectures
+vagrant@arquitectura:~$
+
+
                   
               </div>
           
