@@ -67,7 +67,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Quest TIC" />
 <script type="application/ld+json">
-{"url":"https://quest-tic.netlify.app//","description":"A website with blog posts and pages","@type":"WebSite","headline":"Quest TIC","name":"Quest TIC","@context":"https://schema.org"}</script>
+{"url":"https://quest-tic.netlify.app//","description":"A website with blog posts and pages","@type":"WebSite","name":"Quest TIC","headline":"Quest TIC","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -208,122 +208,6 @@
   Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.
 
 
-Actualizamos el sistema
-
-
-sudo apt-get update &amp;amp;&amp;amp; apt-get upgrade &amp;amp;&amp;amp; apt-get dist-upgrade &amp;amp;&amp;amp; apt-get clean
-
-
-Agregar arquitectura i386
-
-
-sudo dpkg --add-architecture i386
-
-
-
-  Actualizamos los paquetes.
-
-
-
-sudo apt-get update
-
-
-Elimina todos los paquetes del cache. El único inconveniente que podría resultar es que si quieres reinstalar un paquete, tienes que volver a descargarlo.
-
-
-sudo apt-get clean
-
-
-Instalamos los paquetes apt, dpkg y las apt-utils de la arquitectura que acabamos de agregar.
-
-
-sudo apt-get -y --no-install-recommends --download-only install dpkg:i386 apt:i386 apt-utils:i386
-
-
-Los archivos del paquete .deb permanecen almacenados en caché /var/cache/apt/archives así que trataremos de instalarlos
-
-
-sudo dpkg --install /var/cache/apt/archives/*i386.deb
-
-
-
-  En caso de que de fallo algún paquete puede ser porque al instalar los paquetes dpkg hace de una pasada y si un paquete de parte alta de la lista depende de uno de la parte baja va dar un problema de dependencia por lo que seria conveniente volver a ejecutar el comando.
-
-
-Descargamos los paquetes con la arquitectura i386
-
-
- sudo apt-get --download-only -y --no-install-recommends install `dpkg -l | grep &#39;^.i&#39; | awk &#39;{print $2}&#39; | grep :amd64 | egrep -v &#39;linux-image-.&#39; | egrep -v &#39;linux-headers-.&#39; | egrep -v &#39;linux-compiler-.*&#39;|egrep -v &#39;liblsan0&#39;|sed &#39;s/:amd64/:i386/g&#39;`
-
-
-
-  Mi principal problema fueron unos paquetes que se saltaban mis restricciones y tuve que añadir más tarde: LInux-headers,linux-compiler y liblsan0
-
-
-En caso de tener problemas por falta de librerías instalaremos de nuevo
-
-
-sudo  dpkg --install /var/cache/apt/archives/lib*.deb
-
-
-Ahora ejecutaremos  sudo dpkg –configure -a que configurarán todos los paquetes desempaquetados pero no configurados.
-
-Instalamos los últimos paquetes que nos quedan
-
-
-sudo dpkg --install /var/cache/apt/archives/*.deb
-
-
-Eliminamos los paquetes de amd64 que no dependen del kernel ya que cuando reiniciemos y tengamos la versión de 686 podremos eliminar en su totalidad los paquetes de amd64
-
-
-sudo apt-get autoremove
-
-
-Instalamos el kernel i386 (linux-image-686):
-
-
-sudo apt-get install -y linux-image-686
-
-
-
-  Como hemos tenido problemas con los headers de x86_64 instalaremos el header de 686
-
-
-
-sudo apt-get install linux-headers-686
-
-
-Reinicamos el equipo para realizar la comprobación:
-
-
-sudo reboot
-
-
-Comprobación y borrado de todos los paquetes amd64 restantes.
-
-
-uname -r
-4.9.0-13-686
-
-sudo apt-get remove -y `dpkg -l | grep &#39;^.i&#39; | awk &#39;{print $2}&#39; | grep :amd64`
-
-
-Una vez eliminado todos los paquetes toca eliminar la arquitectura de amd64 y comprobamos la arquitectura que tenemos ahora por defecto
-
-
-vagrant@arquitectura:~$ sudo dpkg --remove-architecture amd64
-vagrant@arquitectura:~$ dpkg --print-architecture
-i386
-
-
-
-  Compruebo que no tenemos tampoco arquitectura
-
-
-vagrant@arquitectura:~$ dpkg --print-foreign-architectures
-vagrant@arquitectura:~$
-
 
                   
               </div>
@@ -354,11 +238,6 @@ vagrant@arquitectura:~$
                   
                      Me presento, mi nombre es Juan Luis Millán y soy el creador de este blog, Actualmente estoy cursando los estudios de Administración de Sistemas Informáticos en Red en el IES Gonzalo Nazareno (Dos Hermanas).
 
-¿Que es Quest TIC?
-Mi idea al crear este blog es la de poder compartir conocimentos y conocer a otras personas del sector así de esta manera puedo aprender más de este gran mundo que es la informática y compartirla con vosotros.
-
-¿Que contenido se puede ver en la página?
-La intención que tengo es de tener un contenido variado, desde montar un servidor en Linux pasando por multitud de programas y mostrando comandos básicos para el uso diario de tu sistema operativo.
 
                   
               </div>
