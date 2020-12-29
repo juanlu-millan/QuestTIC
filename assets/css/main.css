@@ -2521,6 +2521,8 @@ header h1 { margin: 0; }
 
 .call-out p:last-child { margin-bottom: 0; }
 
+#main { background-position: 100%; }
+
 /* --- Post listing --- */
 .posts .post-teaser { width: 100%; margin-bottom: 0; display: inline-block; background-size: cover; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
