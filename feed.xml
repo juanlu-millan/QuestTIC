@@ -1,4 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2021-01-01T16:45:27+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><entry><title type="html">Modificación completa de la arquitectura en Debian 10</title><link href="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html" rel="alternate" type="text/html" title="Modificación completa de la arquitectura en Debian 10" /><published>2020-12-29T00:00:00+01:00</published><updated>2020-12-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2021-01-01T20:13:48+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><entry><title type="html">Modificación completa de la arquitectura en Debian 10</title><link href="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html" rel="alternate" type="text/html" title="Modificación completa de la arquitectura en Debian 10" /><published>2021-01-01T00:00:00+01:00</published><updated>2021-01-01T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8</id><content type="html" xml:base="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html">&lt;ul&gt;
+  &lt;li&gt;En este post veremos como actualizar una máquina con Centos 7 a la versión más reciente de Centos 8 siguiendo una serie de sencillos pasos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con los paquetes de nuestra distribución Linux.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install epel-release -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Instalamos en caso de no tenerla instalada las herramientas de yum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install yum-utils -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instalamos RMP que es una herramienta para manejar archivos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install rpmconf -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ejecutamos el comando de verificación de rpm.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpmconf -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Verifique los archivos de configuración de todos los paquetes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hacemos una limpieza de paquetes que no son necesarios.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package-cleanup --leaves
+package-cleanup --orphans
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ahora instalaremos un gestor de paquetes llamado DNF que sustituirá a yum que ya esta algo desfasado.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install dnf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Llega el momento en el que desinstalamos yum y eliminamos su directorio.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf -y remove yum yum-metadata-parser
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -Rf /etc/yum
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Habilitamos los repositorios de Centos 8 ( http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf install \
+http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/centos-repos-8.2-2.2004.0.1.el8.x86_64.rpm \
+http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/centos-release-8.2-2.2004.0.1.el8.x86_64.rpm \
+http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/centos-gpg-keys-8.2-2.2004.0.1.el8.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Actualizamos el paquete epel que vimos anteriormente.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf upgrade -y epel-release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generamos la caché.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf makecache
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eliminamos los ficheros temporales realizando una limpieza.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf clean all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Debemos eliminar las versiones actuales del kernel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Comprobamos el instalado.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; rpm --query centos-release
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Con rpm -qa&lt;/td&gt;
+      &lt;td&gt;egrep kernel nos muestra tanto el kernel-core como kernel-tools-libs y kernel-tools de la versión actual y la eliminamos.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -e `rpm -qa | egrep kernel`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eliminamos los paquetes que tienen conflictos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -e --nodeps sysvinit-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Actualizamos de nuevo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf -y --releasever=8 --allowerasing --setopt=deltarpm=false distro-sync
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instalamos el kernel-core de Centos8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf install -y kernel-core
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instalamos los paquetes minimos del sistema:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnf -y groupupdate &quot;Core&quot; &quot;Minimal Install&quot; \
+--allowerasing --skip-broken
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reiniciamos y realizamos la comprobación:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comprobación:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[centos@quijote ~]$ uname -r
+4.18.0-193.28.1.el8_2.x86_64
+[centos@quijote ~]$ cat /etc/redhat-release
+CentOS Linux release 8.2.2004 (Core)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Debian" /><category term="amd64" /><category term="i386" /><category term="kernel" /><summary type="html">En este post veremos como actualizar una máquina con Centos 7 a la versión más reciente de Centos 8 siguiendo una serie de sencillos pasos.</summary></entry><entry><title type="html">Modificación completa de la arquitectura en Debian 10</title><link href="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html" rel="alternate" type="text/html" title="Modificación completa de la arquitectura en Debian 10" /><published>2020-12-29T00:00:00+01:00</published><updated>2020-12-29T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian</id><content type="html" xml:base="https://quest-tic.netlify.app//2020/12/29/Cambio-de-Arquitectura-Debian.html">&lt;ul&gt;
   &lt;li&gt;Utilizando una maquina con Debian Buster sobre arquitectura x86_64 (amd64) agregaremos la arquitectura i386 y realizaremos los pasos necesarios para que finalmente todos los paquetes de la máquina sean de arquitectura i386. Se finalizara cuando se elimine la arquitectura amd64.&lt;/li&gt;
 &lt;/ul&gt;
 
