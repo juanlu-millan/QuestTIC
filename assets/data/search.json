@@ -1,9 +1,9 @@
 [
   
   {
-    "title"    : "Modificación completa de la arquitectura en Debian 10",
+    "title"    : "Actualización de Centos 7 a Centos 8",
     "category" : "",
-    "tags"     : " Debian, amd64, i386, kernel",
+    "tags"     : " Centos, Centos 8, kernel",
     "url"      : "/2021/01/01/De-Centos7-a-Centos8.html",
     "date"     : "January 1, 2021",
     "excerpt"  : "\n  En este post veremos como actualizar una máquina con Centos 7 a la versión más reciente de Centos 8 siguiendo una serie de sencillos pasos.\n\n\n\n\n\n  Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con ...",
