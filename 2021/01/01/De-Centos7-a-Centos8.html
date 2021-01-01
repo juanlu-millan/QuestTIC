@@ -203,10 +203,13 @@
 <!--more-->
 
 <ul>
-  <li>Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con los paquetes de nuestra distribución Linux.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install epel-release -y
-</code></pre></div>    </div>
-  </li>
+  <li>Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con los paquetes de nuestra distribución Linux.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install epel-release -y
+</code></pre></div></div>
+
+<ul>
   <li>Instalamos en caso de no tenerla instalada las herramientas de yum</li>
 </ul>
 
@@ -230,11 +233,14 @@
 <p>Verifique los archivos de configuración de todos los paquetes.</p>
 
 <ul>
-  <li>Hacemos una limpieza de paquetes que no son necesarios.
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package-cleanup --leaves
+  <li>Hacemos una limpieza de paquetes que no son necesarios.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package-cleanup --leaves
 package-cleanup --orphans
-</code></pre></div>    </div>
-  </li>
+</code></pre></div></div>
+
+<ul>
   <li>Ahora instalaremos un gestor de paquetes llamado DNF que sustituirá a yum que ya esta algo desfasado.</li>
 </ul>
 

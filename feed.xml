@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2021-01-01T20:19:56+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><entry><title type="html">Actualización de Centos 7 a Centos 8</title><link href="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html" rel="alternate" type="text/html" title="Actualización de Centos 7 a Centos 8" /><published>2021-01-01T00:00:00+01:00</published><updated>2021-01-01T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8</id><content type="html" xml:base="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://quest-tic.netlify.app//feed.xml" rel="self" type="application/atom+xml" /><link href="https://quest-tic.netlify.app//" rel="alternate" type="text/html" /><updated>2021-01-01T21:02:16+01:00</updated><id>https://quest-tic.netlify.app//feed.xml</id><title type="html">Quest TIC</title><entry><title type="html">Actualización de Centos 7 a Centos 8</title><link href="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html" rel="alternate" type="text/html" title="Actualización de Centos 7 a Centos 8" /><published>2021-01-01T00:00:00+01:00</published><updated>2021-01-01T00:00:00+01:00</updated><id>https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8</id><content type="html" xml:base="https://quest-tic.netlify.app//2021/01/01/De-Centos7-a-Centos8.html">&lt;ul&gt;
   &lt;li&gt;En este post veremos como actualizar una máquina con Centos 7 a la versión más reciente de Centos 8 siguiendo una serie de sencillos pasos.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;!--more--&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con los paquetes de nuestra distribución Linux.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install epel-release -y
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Instalamos el paquete epel-release, EPEL son paquetes de Fedora y que no entrán en conflicto con los paquetes de nuestra distribución Linux.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install epel-release -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Instalamos en caso de no tenerla instalada las herramientas de yum&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -32,11 +35,14 @@
 &lt;p&gt;Verifique los archivos de configuración de todos los paquetes.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Hacemos una limpieza de paquetes que no son necesarios.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package-cleanup --leaves
+  &lt;li&gt;Hacemos una limpieza de paquetes que no son necesarios.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;package-cleanup --leaves
 package-cleanup --orphans
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
   &lt;li&gt;Ahora instalaremos un gestor de paquetes llamado DNF que sustituirá a yum que ya esta algo desfasado.&lt;/li&gt;
 &lt;/ul&gt;
 
